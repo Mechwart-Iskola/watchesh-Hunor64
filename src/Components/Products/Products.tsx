@@ -1,19 +1,15 @@
 
+import { useState } from 'react'
 import './products.css'
 
-import ProductsCard from './ProductsCard/ProductsCard'
-
-{/* Fetcheld be az adatokat a products jsonból és jelenítsd meg a products__container elemben*/}
-
-/*Az alábbiakat állítsd be a producst.css-ben */
-/* 767px alatt egy sorban 2 óra jelenjen meg */
-/* 767px felett egy sorban egyszerre 3 óra jelenjen meg */
-/* 992px felett egy sorban egyszerre 4 óra jelenjen meg */
-
-/* 767 px alatt 2rem a fölöt 3rem legyen a rész az elemek között */
+import ProductsCard, { ProductsCardProps } from './ProductsCard/ProductsCard'
 
 const Products = () => {
-
+  const [products, setProducts] = useState<ProductsCardProps[]>([])
+  fetch('/products.json')
+    .then((response) => response.json())
+    .then((data) => setProducts(data))
+    .catch((error) => console.error('Error fetching data:', error))
   return (
     <section className="products container" id="products">
     <h2 className="section__title">
@@ -21,7 +17,11 @@ const Products = () => {
     </h2>
 
     <div className="products__container">
-      
+      {
+        products.map((item, index) => (
+            <ProductsCard key={index} title={item.title} price={item.price} image={item.image} />
+        ))
+      }
     </div>
 </section>
   )

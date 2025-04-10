@@ -1,9 +1,4 @@
 import './home.css'
-
-{/*A .home_social osztályú elemre állíts be 90 fokos elforgatást a css-ben!*/}
-
-{/*A home__img-bg osztálykijelőlö elem háttérszine legyen a first-color a home.css-ben*/}
-
 const Home = () => {    
   return (
     <section className="home" id="home">
@@ -19,7 +14,9 @@ const Home = () => {
             <a href="https://twitter.com/" target="_blank" className="home__social-link">
                 Twitter
             </a>
-            {/*Itt add hozzá a  az instagram linket  a fetiek mintájára, https://www.instagram.com/*/}
+            <a href="https://www.instagram.com/" target="_blank" className="home__social-link">
+                Instagram
+            </a>
             
         </div>
 

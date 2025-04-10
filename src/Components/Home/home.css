@@ -17,6 +17,7 @@
     align-items: flex-end;
     justify-self: flex-end;
     transform: translateX(1.5rem);
+    background-color: var(--first-color);
 }
 
 .home__social {
