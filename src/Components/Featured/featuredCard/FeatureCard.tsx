@@ -15,7 +15,7 @@ const FeatureCard = ({ title, price, image }: FeatureCardProps) => {
     
         <div className="featured__data">
             <h3 className="featured__title">{title}</h3>
-            <span className="featured__price">{price}</span>
+            <span className="featured__price">${price}</span>
         </div>
     
         <button className="button featured__button">ADD TO CART</button>
