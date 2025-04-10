@@ -1,7 +1,10 @@
 import './featurecard.css'
 
-
-{/*Hozz létre egy típust ami alklmas a feature.json adatainak tárolására */}
+export type FeatureCardProps = {
+  title: string,
+  price: string,
+  img: string,
+}
 
 {/*Egészítsd ki a komponenst a megfelelő props-ok használatával */}
 
