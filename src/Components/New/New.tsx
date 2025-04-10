@@ -1,5 +1,3 @@
-import React from 'react'
-
 const New = () => {
   return (
     <section className="new section container" id="new">

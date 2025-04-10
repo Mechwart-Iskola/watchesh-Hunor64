@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Footer = () => {
   return (
     <footer className="footer section">
@@ -55,15 +53,15 @@ const Footer = () => {
                     <h3 className="footer__title">Social</h3>
 
                     <ul className="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" className="footer__social-link">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook" className="footer__social-link">
                             <i className='bx bxl-facebook'></i>
                         </a>
 
-                        <a href="https://twitter.com/" target="_blank" className="footer__social-link">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter" className="footer__social-link">
                             <i className='bx bxl-twitter' ></i>
                         </a>
 
-                        <a href="https://www.instagram.com/" target="_blank" className="footer__social-link">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram" className="footer__social-link">
                             <i className='bx bxl-instagram' ></i>
                         </a>
                     </ul>
