@@ -1,5 +1,4 @@
 .feautured {
-
     padding: 6.5rem 0 1rem;
     max-width: 1024px;
     margin-left: var(--mb-1-5);
@@ -9,6 +8,7 @@
 .featured__container {
     display: grid;
     row-gap: 2.5rem;
+    grid-template-columns: 1fr;
 }
 
 .feature__title {
@@ -34,9 +34,7 @@
 }
 
 @media screen and (min-width: 576px) {
-
     .featured__container {
-
         justify-content: center;
         align-items: flex-start;
         gap: 1.5rem;
@@ -44,25 +42,19 @@
 }
 
 @media screen and (min-width: 767px) {
-
     .featured {
         padding: 8rem 0 1rem;
     }
-
-
 }
 
 @media screen and (min-width: 992px) {
     .featured__container {
-
         padding-top: 2rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .featured {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-
 }
