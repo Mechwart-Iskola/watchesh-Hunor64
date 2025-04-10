@@ -631,3 +631,7 @@ body.dark-theme {
     right: 3rem;
   }
 }
+ul{
+  list-style: none;
+  
+}
