@@ -53,7 +53,7 @@ const Header = () => {
 </header>
 {
     isCartVisible &&
-        <Cart/>
+        <Cart visible={setIsCartVisible}/>
 }
  </>
   )
